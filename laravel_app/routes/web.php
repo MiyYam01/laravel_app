@@ -19,4 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/users', [UserController::class, 'index']);
-Route::get('/CIT18', [UserController::class, 'goto']);
+
+//Route::get('/CIT18', [UserController::class, 'goto']);
+
+Route::get('/users/{id}', [UserController::class, 'show']);
